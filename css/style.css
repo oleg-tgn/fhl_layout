@@ -5,6 +5,7 @@
 @import url('games_admin.css');
 @import url('forms.css');
 @import url('banner.css');
+@import url('popup.css');
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -87,6 +88,8 @@ img {
 
 .header_home {	
 	background: none;
+	position: relative;
+	z-index: 10;
 }
 
 .navbar-dark .navbar-nav .nav-link {	
