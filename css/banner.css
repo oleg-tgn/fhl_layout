@@ -33,6 +33,11 @@
 	background: rgba(19, 20, 28, 0.5);
 }
 
+.banner__content > *{
+	position: relative;
+	z-index: 1;
+}
+
 .banner__content::before {
 	content: "";
 	position: absolute;
@@ -46,6 +51,7 @@
 	border-color: transparent rgba(19, 20, 28, 0.5) rgba(19, 20, 28, 0.5) rgba(19, 20, 28, 0.5);
 	/* opacity: 0.5; */
 }
+
 
 .banner__title {
 	text-transform: uppercase;
@@ -116,4 +122,8 @@
 
 .admsliders__btn:first-child {
 	margin-bottom: 10px;
+}
+
+.nav-link__user-icon {
+	margin-top: -5px;
 }
