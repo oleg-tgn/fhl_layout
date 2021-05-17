@@ -1,15 +1,17 @@
-.games {
+.cards {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto 50px;
 }
 
-.games__item {
+.card {
+    display: flex;
 	width: 100%;
 	margin-bottom: 70px;
+    border: none;
 }
 
-.games__image {
+.card__image {
 	position: relative;
 	display: block;
 	height: 360px;
@@ -18,7 +20,7 @@
 	background-repeat: no-repeat;
 }
 
-.games__image::before {
+.card__image::before {
 	content: "";
 	position: absolute;
 	top: 0; 
@@ -30,8 +32,7 @@
 	transition: opacity .3s ease-in-out;
 }
 
-.games__image::after {
-	content: "ПОДРОБНЕЕ О ТУРНИРЕ";
+.card__image::after {	
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -51,32 +52,54 @@
 	color: #B7BADF;
 }
 
-.games__image:hover::before,
-.games__image:hover::after {
+.card__image--game::after {
+    content: "ПОДРОБНЕЕ О ТУРНИРЕ";    
+}
+
+.card__image--event::after {
+    content: "ПОДРОБНЕЕ О СОБЫТИИ";    
+}
+
+.card__image:hover::before,
+.card__image:hover::after {
 	opacity: 1;	
 }
 
-.games__link {
+.card__title {
 	display: flex;
 	color: #fff;	
 	flex-direction: column;
 	text-decoration: none;
+
+    font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color: #FFFFFF;
+
+    transition: color .3s ease;
 }
 
-.games__link:hover {
-	color: #fff;
+.card__title:hover {
+    
+    color: #B7BADF;
 	text-decoration: none;
 }
 
-.games__desc {
+.card__content {
 	position: relative;
-	padding: 24px 55px 24px 99px;
+	padding: 24px 55px;
 	background: #3d3f51;
 	text-decoration: none;
 	color: #fff;		
 }
 
-.games__desc::before {
+.card__content--game {
+    padding: 24px 55px 24px 99px;
+}
+
+.card__content--game::before {
 	content: "";
 	position: absolute;
 	left: 20px;
@@ -87,27 +110,47 @@
 	background-size: contain;
 }
 
-.games__title {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 30px;
-	color: #FFFFFF;
+.card__date {
+    font-size: 18px;
+    font-weight: 600;    
+    color: #B7BAD1;
 }
 
+.card__description {
+    margin-top: 24px;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.card__link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: color .3s ease, border-color .3s ease;
+}
+
+.card__link:hover {
+    color: #B7BADF;
+    border-color: #B7BADF;
+}
+
+
 @media (min-width: 768px) {
-	.games__item {
+	.card {
 		width: calc(50% - 40px);
 	}
 
-	.games__item:not(:nth-child(3n)) {
+	.card:not(:nth-child(3n)) {
 		margin-right: 60px;
 	}
 }
 
 @media (min-width: 1024px) {
-	.games__item {
+	.card {
 		width: calc(33.33% - 40px);	
 		max-width: 500px;
 	}
