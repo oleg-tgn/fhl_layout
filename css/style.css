@@ -19,8 +19,9 @@ img {
 }
 
 .container {
-	max-width: 1720px;
+	max-width: 1800px;
 	margin: 0 auto;
+	padding: 0 25px;
 }
 
 .modal-content {
@@ -31,7 +32,7 @@ img {
 	text-transform: uppercase;	
 	font-style: normal;
 	font-weight: 800;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 1.2;
 	text-align: center;
 	color: #b7badf;
@@ -130,7 +131,7 @@ img {
 @media (min-width: 768px) {
 	.title {		
 		font-size: 30px;
-		line-height: 1.2px;		
+		line-height: 1.2;		
 		margin-bottom: 30px;
 		margin-top: 30px;
 	}

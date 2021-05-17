@@ -9,12 +9,12 @@
 	width: 100%;
 	margin-bottom: 70px;
     border: none;
+    background: #3d3f51;
 }
 
 .card__image {
 	position: relative;
-	display: block;
-	height: 360px;
+	display: block;	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -74,15 +74,12 @@
     font-family: 'Source Sans Pro', sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 24px;
-	line-height: 30px;
 	color: #FFFFFF;
 
     transition: color .3s ease;
 }
 
-.card__title:hover {
-    
+.card__title:hover {    
     color: #B7BADF;
 	text-decoration: none;
 }
@@ -95,63 +92,160 @@
 	color: #fff;		
 }
 
-.card__content--game {
-    padding: 24px 55px 24px 99px;
-}
-
 .card__content--game::before {
-	content: "";
-	position: absolute;
-	left: 20px;
-	bottom: 0;
-	width: 59px;
-	height: 145px;
-	background-image: url("../img/lighthpise.svg");
-	background-size: contain;
+    content: "";
+    position: absolute;    
+    background-image: url("../img/lighthpise.svg");
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
 }
 
 .card__date {
-    font-size: 18px;
     font-weight: 600;    
     color: #B7BAD1;
 }
 
-.card__description {
-    margin-top: 24px;
-    margin-bottom: 18px;
-    font-size: 16px;
-}
+@media (max-width: 767px) {
+	.card {
+        flex-direction: row-reverse;      
+        margin-bottom: 20px;  
+	}
 
-.card__link {
-    display: inline-block;
-    font-size: 18px;
-    line-height: 24px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    transition: color .3s ease, border-color .3s ease;
-}
+    .card__image {
+        width: 30%;
+        height: auto;
+    }
 
-.card__link:hover {
-    color: #B7BADF;
-    border-color: #B7BADF;
+    .card__content {
+        width: 70%;
+    }
+
+    .card__content {
+        padding: 20px 15px;
+    }
+
+    .card__content--game::before {
+        content: none;
+    }
+
+    .card__title {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .card__date {
+        font-size: 14px;
+    }
+
+    .card__description {
+        display: none;
+    }
+
+    .card__link {
+        display: none;
+    }
 }
 
 
 @media (min-width: 768px) {
-	.card {
-		width: calc(50% - 40px);
+	.card {		
+        justify-content: space-between;
 	}
 
-	.card:not(:nth-child(3n)) {
-		margin-right: 60px;
+    .card__image {
+        height: 220px;
+    }
+
+    .card__title {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .card__date {
+        font-size: 18px;
+    }
+
+    .card__description {
+        margin-top: 24px;
+        margin-bottom: 18px;
+        font-size: 16px;
+    }
+
+    .card__link {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        transition: color .3s ease, border-color .3s ease;
+    }
+    
+    .card__link:hover {
+        color: #B7BADF;
+        border-color: #B7BADF;
+    }
+
+    .card__content {
+        padding: 15px 20px;
+    }
+
+    .card__content--game {
+        padding: 15px 20px 15px 70px;
+    }
+
+    .card__content--game::before {       
+        left: 15px;
+        bottom: 0;
+        width: 40px;
+        height: 140px;       
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+    .card {
+		width: calc(50% - 20px);
+    }
+
+    .card:not(:nth-child(2n)) {
+		margin-right: 40px;
 	}
 }
 
 @media (min-width: 1024px) {
+    .card__image {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1366px) {
 	.card {
 		width: calc(33.33% - 40px);	
 		max-width: 500px;
 	}
+
+    .card:not(:nth-child(3n)) {
+		margin-right: 60px;
+	}
+
+    .card__image {        
+        height: 360px;
+    }
+
+    .card__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .card__content--game {
+        padding: 24px 55px 24px 99px;
+    }
+
+    .card__content--game::before {
+        left: 20px;
+        width: 59px;
+        height: 145px;
+    }
 }
