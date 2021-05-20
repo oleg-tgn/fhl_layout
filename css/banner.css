@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: flex-end;
   height: calc(100vh - 92px);
+  min-height: 400px;
   max-height: 577px;
 }
 

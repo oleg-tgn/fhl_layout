@@ -47,6 +47,10 @@
   color: #B7BAD1;
 }
 
+.dropdown-menu {
+  z-index: 100;
+}
+
 @media (max-width: 767px) {
   .nav__logo-img {
     width: 140px;
