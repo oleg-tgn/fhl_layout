@@ -27,10 +27,29 @@
         
                         <ul class="menu">							                        
                             <li class="menu__item">
-                                <a class="menu__link" href="#games">Турниры</a>
+                                <a class="menu__link dropdown-toggle" href="#games" id="dropdownMenuGames" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Турниры</a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuGames">
+                                    <a href="#" class="dropdown-item">Кибер Арена Versus, Таганрог</a>
+                                    <a href="#" class="dropdown-item">Кибер-Арена, Ростов-на-Дону</a>
+                                    <a href="#" class="dropdown-item">Legion Cyber Arena, Таганрог</a>
+                                    <a href="#" class="dropdown-item">Pride & FF15, Online</a>
+                                    <a href="#" class="dropdown-item">Solo Cup, Online 2</a>
+                                    <a href="#" class="dropdown-item">Solo Cup, Online</a>
+                                    <a href="#" class="dropdown-item">Team Cup, Online</a>
+                                    <a href="#" class="dropdown-item">Кибер-Арена, Ростов-на-Дону</a>
+                                    <a href="#" class="dropdown-item">Лаборатория Inostudio, ИКТИБ</a>
+                                    <a href="#" class="dropdown-item">ТРЦ Мармелад, Таганрог</a>
+                                    <a href="#" class="dropdown-item">Cyber Club, Таганрог</a>
+                                </div>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#events">События</a>
+                                <a class="menu__link dropdown-toggle" href="#events" id="dropdownMenuEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">События</a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuEvents">
+                                    <a href="#" class="dropdown-item">Финал ЧМ 2019</a>
+                                    <a href="#" class="dropdown-item">Праздничная трансляция</a>  
+                                </div>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#danate">Поддержать</a>
@@ -41,7 +60,7 @@
                             <li class="menu__item">
                                 <a class="menu__link" href="#players">Игроки</a>
                             </li>  				
-                            <li class="menu__item">
+                            <li class="menu__item menu__item--login">
                                 <a class="menu__link" href="#" data-toggle="modal" data-target="#loginModal">
                                     <svg width="18" height="17" class="nav-link__user-icon"><use xlink:href="img/icons.svg#user"></use></svg> Войти
                                 </a>

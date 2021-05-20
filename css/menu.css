@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -22,6 +24,9 @@
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 .menu__item {
@@ -202,6 +207,56 @@
     justify-content: space-between;
   }
 
+  .nav__logo {
+    margin-right: 80px;
+  }
+
+  .burger-menu {
+    width: calc(100% - 260px);
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu__item--login {
+    margin-left: auto;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .menu__link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .dropdown-toggle::after {
+    vertical-align: 2px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .banner__container {
+    height: 500px;
+  }
+
+  .banner__content {
+    padding: 35px 0 60px;
+  }
+
+  .banner__content::before {   
+    top: -100px;
+    border-width: 100px 50vw 0 50vw;
+  }
+
+  .banner__container::after {   
+    border-width: 100px 50vw 0 50vw;    
+  }
+}
+
+@media (min-width: 1366px) {  
   .menu__item:not(:last-child) {
     margin-right: 80px;
   }
