@@ -56,6 +56,10 @@
     width: 140px;
     height: 36px;  
   }
+
+  .menu {
+    padding: 65px 0 0 0; 
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -143,7 +147,7 @@
       
   .menu {
     width: 280px;
-    padding: 65px 0 0 0;    
+    padding: 100px 0 0 0;    
     position: absolute;
     top: 0;    
     bottom: 0;

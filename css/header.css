@@ -1,0 +1,83 @@
+.navbar {
+	background: transparent;
+}
+
+.header,
+.header-page {
+	background: #3D3F51;
+}
+
+.header {
+	padding: 0;
+}
+
+.header-page {
+    padding: 0;
+}
+
+.header_home {	
+	background: none;
+	z-index: 10;
+}
+
+.navbar-dark .navbar-nav .nav-link {	
+	color: #fff;
+}
+
+.navbar-nav {
+	flex-direction: row;
+	align-items: center;
+}
+
+.navbar-text {
+	color: #fff;
+}
+
+.container.container--top {
+  position: relative;   
+  padding: 15px 80px 15px 25px;             
+}
+
+.container--top::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: 25px;
+  width: 70px;
+  height: 170px;
+  background: url('../img/lighthpise.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+@media (min-width: 768px) {
+  .container.container--top {
+    padding: 30px 150px 30px 25px; 
+  }
+
+  .container--top::after {
+    width: 99px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 34px 0;
+  }
+
+  .header-page {
+    padding: 0;
+  }
+
+  .container.container--top {
+    padding: 30px 250px 30px 25px; 
+  }
+
+  .container--top::after {
+    right: 120px;
+    width: 100px;
+    height: 253px;
+  }
+}
