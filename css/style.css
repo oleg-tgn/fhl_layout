@@ -7,12 +7,15 @@
 @import url('popup.css');
 @import url('cards.css');
 @import url('menu.css');
+@import url('footer.css');
 
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #FFFFFF;
 	background: #272A33;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 
 img {

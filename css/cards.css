@@ -129,6 +129,10 @@
         content: none;
     }
 
+    .card__image:hover::after {
+        content: none;
+    }
+
     .card__title {
         font-size: 16px;
         line-height: 1.2;
