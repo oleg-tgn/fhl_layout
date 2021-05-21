@@ -139,6 +139,7 @@
   }
       
   .menu {
+    width: 280px;
     padding: 120px 0 0 0;    
     position: fixed;
     top: 0;
@@ -203,6 +204,27 @@
   .burger-menu_active .burger-menu_overlay {
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .menu__item.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu.show {
+    margin-top: -15px;
+    position: relative !important;
+    transform: none !important;
+    background: transparent;
+    border: none;
+    border: none;
+    color: #fff;
+  }
+
+  .dropdown-item {
+    color: #fff;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
