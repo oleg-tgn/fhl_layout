@@ -11,6 +11,7 @@
   margin-top: -10px;
   color: #fff;
   transition: color .3s ease;
+  border: none;
 }
 
 .nav__logo-img {
@@ -49,6 +50,11 @@
 
 .dropdown-menu {
   z-index: 100;
+}
+
+
+.menu__link {
+  border: none;
 }
 
 @media (max-width: 767px) {
@@ -192,6 +198,7 @@
     letter-spacing: 5px;
     font-weight: 400;
     color: #fff;    
+    border: none;
   }
 
   .menu__link:hover {
