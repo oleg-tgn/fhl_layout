@@ -1,3 +1,7 @@
+.footer {
+  margin-top: 50px;
+}
+
 .footer-menu {    
   width: 100%;
   display: flex;
@@ -6,7 +10,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-bottom: 50px;    
+  padding-bottom: 50px;      
 }
 
 .footer-menu__link {
@@ -16,6 +20,7 @@
   line-height: 25px;
   color: #FFFFFF;
   text-decoration: none;
+  border: none;
 }
 
 .footer-menu__link:hover {
@@ -39,6 +44,7 @@
   line-height: 20px;
   color: #B7BAD1;
   text-decoration: none;
+  border: none;
 }
 
 .footer-submenu__link:hover {
@@ -61,6 +67,7 @@
 .footer-menu__item {
   width: 100%;
   padding-right: 12px;
+  border: none;
 }
 
 .footer-menu__social {
@@ -69,6 +76,10 @@
 }
 
 @media (min-width: 768px) {
+  .footer {
+    margin-top: 100px;
+  }
+
   .footer-menu__item {
     width: calc(100% / 6);
     padding-right: 12px;

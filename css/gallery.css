@@ -7,4 +7,5 @@
 .gallery__item {
     display: flex;
     margin: 5px;
+    border: none;
 }
