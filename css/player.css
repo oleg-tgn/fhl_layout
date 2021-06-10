@@ -1,0 +1,25 @@
+.player__ranked {
+    width: 50px;   
+}
+
+.table .player__ranked,
+.table .player__position {
+    padding: 0;
+}
+
+.table .player__positions-list {
+    padding: 0;
+}
+
+.player__positions-list {
+    display: flex;
+}
+
+.player__position {
+    display: inline-block;
+    width: 30px;
+}
+
+.player__position:not(:last-child) {
+    margin-right: 10px;
+}
