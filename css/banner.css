@@ -123,8 +123,7 @@
 
 @media (max-width: 768px) {
   .header.header_home {
-    padding: 0;
-    position: static;
+    padding: 0;    
   }
 
   .container.container--header {

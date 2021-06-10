@@ -12,6 +12,7 @@
 	
 </head>
 <body>
+    <div class="main-wrapper">
 	<div class="banner" style="background-image: url('img/slider/banner.jpg')">
 		<header class="header header_home">
             <div class="container container--header">
@@ -42,24 +43,16 @@
                                     <a href="#" class="dropdown-item">ТРЦ Мармелад, Таганрог</a>
                                     <a href="#" class="dropdown-item">Cyber Club, Таганрог</a>
                                 </div>
-                            </li>
+                            </li>  
                             <li class="menu__item">
-                                <a class="menu__link dropdown-toggle" href="#events" id="dropdownMenuEvents" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">События</a>
-
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuEvents">
-                                    <a href="#" class="dropdown-item">Финал ЧМ 2019</a>
-                                    <a href="#" class="dropdown-item">Праздничная трансляция</a>  
-                                </div>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#danate">Поддержать</a>
-                            </li>
+                                <a class="menu__link" href="players.html">Игроки</a>
+                            </li> 
                             <li class="menu__item">
                                 <a class="menu__link" href="#clubs">Клубы</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#players">Игроки</a>
-                            </li>  				
+                                <a class="menu__link" href="#danate">Поддержать</a>
+                            </li> 				
                             <li class="menu__item menu__item--login">
                                 <a class="menu__link" href="#" data-toggle="modal" data-target="#loginModal">
                                     <svg width="18" height="17" class="nav-link__user-icon"><use xlink:href="img/icons.svg#user"></use></svg> Войти
@@ -83,7 +76,6 @@
 		</div>
 	</div>
     <section class="container">	
-        <h2 class="title">Проведенные мероприятия</h2>
         <div class="cards">
             <div class="card">	
                 <a href="game.html" class="card__image card__image--game" style="background-image: url(img/games/cyber_versus.jpg)"></a>
@@ -169,56 +161,8 @@
         <div class="container">            
             <ul class="footer-menu">
                 <li class="footer-menu__item">
-                    <a href="#Турниры" class="footer-menu__link">Турниры</a>
-
-                    <ul class="footer-submenu">
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Кибер-Арена, Ростов-на-Дону</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Legion Cyber Arena, Таганрог</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Pride & FF15, Online</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Solo Cup, Online 2</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Solo Cup, Online</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Team Cup, Online</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Кибер-Арена, Ростов-на-Дону</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Лаборатория Inostudio, ИКТИБ, Таганрог</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">ТРЦ Мармелад, Таганрог</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Cyber Club, Таганрог</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="footer-menu__item">
-                    <a href="#События" class="footer-menu__link">События</a>
-
-                    <ul class="footer-submenu">
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Финал ЧМ 2019</a>
-                        </li>
-                        <li class="footer-submenu__item">
-                            <a href="#" class="footer-submenu__link">Праздничная трансляция</a>
-                        </li>                        
-                    </ul>
-                </li>
-                <li class="footer-menu__item">
-                    <a href="#Поддержать" class="footer-menu__link">Поддержать</a>
-                </li>
+                    <a href="#Турниры" class="footer-menu__link">Турниры</a>                    
+                </li>  
                 <li class="footer-menu__item">
                     <a href="#Игроки" class="footer-menu__link">Игроки</a>
                 </li>
@@ -226,6 +170,9 @@
                     <a href="#Клубы" class="footer-menu__link">Клубы</a>
                 </li>
                 <li class="footer-menu__item">
+                    <a href="#Поддержать" class="footer-menu__link">Поддержать</a>
+                </li>
+                <li class="footer-menu__item footer-menu__item--social">
                     <a href="#vk" class="footer-menu__social"><svg width="35" height="21"><use xlink:href="img/icons.svg#vk"></use></svg></a>
                     <a href="#telegram" class="footer-menu__social"><svg width="29" height="26"><use xlink:href="img/icons.svg#telegram"></use></svg></a>
                     <a href="#youtube" class="footer-menu__social"><svg width="32" height="21"><use xlink:href="img/icons.svg#youtube"></use></svg></a>
@@ -268,6 +215,7 @@
             </form>
             </div>
         </div>
+    </div>
     </div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

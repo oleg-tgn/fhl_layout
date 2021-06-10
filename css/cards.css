@@ -1,7 +1,7 @@
 .cards {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 auto 50px;
+	margin: 90px auto 50px;
 }
 
 .card {
@@ -109,6 +109,11 @@
 }
 
 @media (max-width: 767px) {
+    .cards {
+        margin-top: 45px;
+        margin-bottom: 25px;
+    }
+
 	.card {
         flex-direction: row-reverse;      
         margin-bottom: 20px;  

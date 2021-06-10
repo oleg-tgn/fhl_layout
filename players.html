@@ -9,11 +9,8 @@
     <title>Fire Horn League</title>
 
     <link rel="stylesheet" href="css/style.css">	
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
 </head>
-<body>
+<body>    
     <header class="header">
         <div class="container container--header">
             <nav class="nav">                
@@ -43,7 +40,7 @@
                                 <a href="#" class="dropdown-item">ТРЦ Мармелад, Таганрог</a>
                                 <a href="#" class="dropdown-item">Cyber Club, Таганрог</a>
                             </div>
-                        </li>                       
+                        </li>                        
                         <li class="menu__item">
                             <a class="menu__link" href="players.html">Игроки</a>
                         </li>  				
@@ -61,74 +58,48 @@
                     </ul>
     
                     <div class="burger-menu_overlay"></div>
-                </div>
-                <!-- <a class="nav__login" href="#" data-toggle="modal" data-target="#loginModal"><svg width="18" height="17" class="nav-link__user-icon"><use xlink:href="img/icons.svg#user"></use></svg> Войти</a> -->
+                </div>                
             </nav>
         </div>            
     </header>
-
-    <header class="header header-page">
-        <div class="container container--top">
-            <h1 class="main-title">
-                Кибер Арена Versus, Таганрог
-            </h1>	
-            <h2 class="main-date">
-                1 апреля 2020
-            </h2>
-            <ul class="game-menu">
-                <li class="game-menu__item">
-                    <a href="game.html" class="game-menu__link">Сетка</a>
-                </li>
-                <li class="game-menu__item">
-                    <a href="team.html" class="game-menu__link ">Составы</a>
-                </li>
-                <li class="game-menu__item">
-                    <a href="time.html" class="game-menu__link">Расписание</a>
-                </li>
-                <li class="game-menu__item">
-                    <a href="rules.html" class="game-menu__link">Регламент</a>
-                </li>
-                <li class="game-menu__item">
-                    <a href="album.html" class="game-menu__link active">Фотогалерея</a>
-                </li>
-            </ul>
-        </div>
-    </header>
     <main class="main">
         <div class="container">
-            <h2 class="title-line">Фото</h2>	
-            <div class="gallery">
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_1_big.jpg"><img src="img/game_album/album_1.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_2_big.jpg"><img src="img/game_album/album_2.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_3.jpg"><img src="img/game_album/album_3.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_4.jpg"><img src="img/game_album/album_4.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_5.jpg"><img src="img/game_album/album_5.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_6.jpg"><img src="img/game_album/album_6.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_7.jpg"><img src="img/game_album/album_7.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_8.jpg"><img src="img/game_album/album_8.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_9.jpg"><img src="img/game_album/album_9.jpg"></a>
-                <a class="gallery__item" data-fancybox="gallery" href="img/game_album/album_10.jpg"><img src="img/game_album/album_10.jpg"></a>
-            </div>
-        </div>
-    </main>	
-    
+            <h2 class="title-line">Игроки</h2>	
+            <div class="table">
+                <div class="table__row">
+                    <div class="table__col table__col--head table__col--1 table__col--num">№</div>
+                    <div class="table__col table__col--head table__col--3">Ник</div>
+                    <div class="table__col table__col--head table__col--2">Ранг</div>
+                    <div class="table__col table__col--head table__col--2">Позиция</div>
+                    <div class="table__col table__col--head table__col--2">Доп</div>
+                </div>
+                <div class="table__row">
+                    <div class="table__col table__col--1 table__col--num">1</div>
+                    <div class="table__col table__col--3">d Album</div>
+                    <div class="table__col table__col--2">Золото II</div>
+                    <div class="table__col table__col--2">Лес</div>
+                    <div class="table__col table__col--2">Топ, Мид</div>
+                </div>                    
+            </div>   
+        </div>	        
+    </main>	    
 
     <footer class="footer">
         <div class="container">            
             <ul class="footer-menu">
                 <li class="footer-menu__item">
-                    <a href="#Турниры" class="footer-menu__link">Турниры</a>                    
-                </li>  
+                    <a href="#Турниры" class="footer-menu__link">Турниры</a>                   
+                </li>   
                 <li class="footer-menu__item">
                     <a href="#Игроки" class="footer-menu__link">Игроки</a>
                 </li>
                 <li class="footer-menu__item">
                     <a href="#Клубы" class="footer-menu__link">Клубы</a>
-                </li>
+                </li>            
                 <li class="footer-menu__item">
                     <a href="#Поддержать" class="footer-menu__link">Поддержать</a>
-                </li>
-                <li class="footer-menu__item">
+                </li>                
+                <li class="footer-menu__item footer-menu__item--social">
                     <a href="#vk" class="footer-menu__social"><svg width="35" height="21"><use xlink:href="img/icons.svg#vk"></use></svg></a>
                     <a href="#telegram" class="footer-menu__social"><svg width="29" height="26"><use xlink:href="img/icons.svg#telegram"></use></svg></a>
                     <a href="#youtube" class="footer-menu__social"><svg width="32" height="21"><use xlink:href="img/icons.svg#youtube"></use></svg></a>
@@ -171,13 +142,12 @@
             </form>
             </div>
         </div>
-    </div>
+    </div>    
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <script src="js/burger-menu.js"></script>
 </body>
