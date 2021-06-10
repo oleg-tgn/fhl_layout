@@ -151,6 +151,10 @@ img {
 	border-radius: unset;
 }
 
+a {	
+	text-decoration: none;
+}
+
 .article a {
 	color: currentColor;
 	text-decoration: none;
@@ -158,6 +162,6 @@ img {
 	transition: color .3s ease;
 }
 
-a:hover {
+.article a:hover {
 	color: #B7BADF;
 }
