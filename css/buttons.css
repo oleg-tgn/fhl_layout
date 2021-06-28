@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.button {
+    width: 380px;
+    height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(17, 20, 39, 0.7);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+}
+
+.button:focus,
+.button:active {
+    outline: none;
+}
+
+.button:hover {
+    background-color: #B7BADF;
+    color: #242632;
+}
+
+.button:active {
+    background-color: #6C6E84;
+    color: #FFFFFF;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 600px;
+    padding: 50px;
+}
+
+.container--inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.radiobutton {
+    display: none; 
+}
+  
+.input-label {
+    position: relative;
+    left: -25px;
+    cursor: pointer;
+    padding-left: 35px;
+}
+  
+.radiobutton + span {
+    text-align: center;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #6C6E84;
+}
+  
+.radiobutton + span:before {
+    content: url("../img/buttons/radiobutton-checked.svg");
+    top: 2.5px;
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+  
+.radiobutton:checked + span:before {
+    opacity: 1;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + span {
+    text-align: center;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 7px;
+    background-color: #6C6E84;
+    transition: background-color .3s ease-in-out;
+}
+
+.checkbox + span::before {
+    content: url("../img/buttons/checkbox-checked.svg");
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.checkbox:checked + span {
+    background-color: #FFFFFF;
+}
+
+.checkbox:checked + span:before {
+    opacity: 1;
+}
+
+.form-input:active,
+.form-input:focus {
+    outline: none;
+    background-color: #FFFFFF;
+    color: #242632;
+}
+
+.form-input {
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
