@@ -35,6 +35,7 @@
 
 .verification__button {
     background-color: transparent;
+    font-size: 14px;
     color: #FFFFFF;
     outline: none;
     border: none;
@@ -53,4 +54,21 @@
     width: 100%;
     background-color: #6C6E84;
 
+}
+
+@media (max-width: 600px) {
+    .notification {
+        padding: 30px;
+    }
+    .notification__image {
+        display: none;
+    }
+
+    .verification__header {
+        font-size: 20px;
+    }
+
+    .verification__paragraph {
+        font-size: 16px;
+    }
 }
